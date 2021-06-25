@@ -17,11 +17,10 @@ CURSOR = CONNECT.cursor()
 
 def send_compliment():
     compliment = get_random_compliment()
-    #print(compliment)
     while compliment is not None:
-        BOT.send_message('376937864', compliment)
+        BOT.send_message('19510627', compliment)
         compliment = get_random_compliment()
-        sleep = random.randint(20000, 30000)
+        sleep = random.randint(2, 3)
         time.sleep(sleep)
 
 
@@ -79,4 +78,3 @@ def database_update(compliment_id):
 
 
 send_compliment()
-print(send_compliment())
