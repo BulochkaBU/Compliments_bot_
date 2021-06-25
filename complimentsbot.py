@@ -9,7 +9,7 @@ import sqlite3
 
 
 TOKEN = '1850958461:AAFaqT7BZqxuJnlhPMQN7oDEGwsBQmECEKE'
-BOT = TeleBot("TOKEN")
+BOT = TeleBot(TOKEN)
 WEBSITE = 'http://kompli.me/komplimenty-devushke'
 CONNECT = sqlite3.connect('compliments.db')
 CURSOR = CONNECT.cursor()
@@ -19,7 +19,7 @@ def send_compliment():
     compliment = get_random_compliment()
     #print(compliment)
     while compliment is not None:
-        BOT.send_message("376937864", compliment)
+        BOT.send_message('376937864', compliment)
         compliment = get_random_compliment()
         sleep = random.randint(20000, 30000)
         time.sleep(sleep)
