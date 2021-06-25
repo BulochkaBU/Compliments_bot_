@@ -17,7 +17,7 @@ CURSOR = CONNECT.cursor()
 
 def send_compliment():
     compliment = get_random_compliment()
-    print(compliment)
+    #print(compliment)
     while compliment is not None:
         BOT.send_message("376937864", compliment)
         compliment = get_random_compliment()
