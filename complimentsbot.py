@@ -8,8 +8,8 @@ from bs4 import BeautifulSoup
 import sqlite3
 
 
-TOKEN = '1850958461:AAFaqT7BZqxuJnlhPMQN7oDEGwsBQmECEKE'
-BOT = TeleBot(TOKEN)
+#TOKEN = '1850958461:AAFaqT7BZqxuJnlhPMQN7oDEGwsBQmECEKE'
+#BOT = TeleBot(TOKEN)
 WEBSITE = 'http://kompli.me/komplimenty-devushke'
 CONNECT = sqlite3.connect('compliments.db')
 CURSOR = CONNECT.cursor()
